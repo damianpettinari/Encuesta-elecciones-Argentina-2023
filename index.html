@@ -20,84 +20,86 @@
         Formulario para medir la intencion de vostos de candidatos
       </p>
       <div>
-        <form id="survey-form">
-          <label id="name-label" for="name">Nombre</label>
-          <input
-            title="This field should not be left blank"
-            id="name"
-            type="text"
-            placeholder="Ingresar nombre"
-            required
-          />
-          <label id="email-label" for="email">Email</label>
-          <input
-            title="This field should not be left blank"
-            type="email"
-            name="email"
-            pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$"
-            placeholder="Ingresar email"
-          />
-          <label id="number-label" for="number">Edad</label>
-          <input
-            title="This field should not be left blank"
-            id="number"
-            type="number"
-            placeholder="Ingresar edad"
-            min="16"
-            max="150"
-            required
-          />
+        <div class="encuesta">
+          <form id="survey-form">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              title="This field should not be left blank"
+              id="name"
+              type="text"
+              placeholder="Ingresar nombre"
+              required
+            />
+            <label id="email-label" for="email">Email</label>
+            <input
+              title="This field should not be left blank"
+              type="email"
+              name="email"
+              pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$"
+              placeholder="Ingresar email"
+            />
+            <label id="number-label" for="number">Edad</label>
+            <input
+              title="This field should not be left blank"
+              id="number"
+              type="number"
+              placeholder="Ingresar edad"
+              min="16"
+              max="150"
+              required
+            />
 
-          <label id="encuesta" for="encuesta"
-            >¿A que candidato votaria en una primera vuelta?</label
-          >
-          <select type="select" id="encuesta" name="encuesta" required>
-            <option value="Cristina Fernandez">Cristina Fernandez</option>
-            <option value="Mauricio Macri">Mauricio Macri</option>
-            <option value="Javier Milei">Javier Milei</option>
-          </select>
-          <label>¿Voto en la eleccion pasada?</label>
+            <label id="encuesta" for="encuesta"
+              >¿A que candidato votaria en una primera vuelta?</label
+            >
+            <select type="select" id="encuesta" name="encuesta" required>
+              <option value="Cristina Fernandez">Cristina Fernandez</option>
+              <option value="Mauricio Macri">Mauricio Macri</option>
+              <option value="Javier Milei">Javier Milei</option>
+            </select>
+            <label>¿Voto en la eleccion pasada?</label>
 
-          <input id="si" type="radio" name="Voto en la eleccion pasada" />SI
-          <input id="no" type="radio" name="Voto en la eleccion pasada" />NO
-          <label>¿Cuáles de las siguientes opciones te gustan?</label>
-          <input
-            type="checkbox"
-            name="likes"
-            value="Rajar empleados publicos"
-            id="likeRajar"
-          />
-          <label for="likeRajar">Rajar empleados publicos</label>
-          <input
-            type="checkbox"
-            name="likeAuh"
-            value="Asignacion universal por hijo"
-            id="likeAuh"
-          />
-          <label for="like-helado">Asignacion universal por hijo</label>
-          <input
-            type="checkbox"
-            name="likeKillEsi"
-            value="Abolir la ESI"
-            id="likeKillEsi"
-          />
-          <label for="like-frutas">Abolir la ESI</label>
-          <input
-            type="checkbox"
-            name="likes"
-            value="Nacionalizar la Banca privada"
-            id="likeNacionalizar"
-          />
-          <label for="likeNacionalizar">Nacionalizar la Banca privada</label>
+            <input id="si" type="radio" name="Voto en la eleccion pasada" />SI
+            <input id="no" type="radio" name="Voto en la eleccion pasada" />NO
+            <label>¿Cuáles de las siguientes opciones te gustan?</label>
+            <input
+              type="checkbox"
+              name="likes"
+              value="Rajar empleados publicos"
+              id="likeRajar"
+            />
+            <label for="likeRajar">Rajar empleados publicos</label>
+            <input
+              type="checkbox"
+              name="likeAuh"
+              value="Asignacion universal por hijo"
+              id="likeAuh"
+            />
+            <label for="like-helado">Asignacion universal por hijo</label>
+            <input
+              type="checkbox"
+              name="likeKillEsi"
+              value="Abolir la ESI"
+              id="likeKillEsi"
+            />
+            <label for="like-frutas">Abolir la ESI</label>
+            <input
+              type="checkbox"
+              name="likes"
+              value="Nacionalizar la Banca privada"
+              id="likeNacionalizar"
+            />
+            <label for="likeNacionalizar">Nacionalizar la Banca privada</label>
 
-          <label for="Comentarios">Comentarios:</label>
-          <textarea
-            name="Comentarios"
-            id="Comentarios"
-            placeholder="Agrega un comentario adicional"
-          ></textarea>
-          <button id="submit">Enviar</button>
-        </form>
+            <label for="Comentarios">Comentarios:</label>
+            <textarea
+              name="Comentarios"
+              id="Comentarios"
+              placeholder="Agrega un comentario adicional"
+            ></textarea>
+            <button id="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
