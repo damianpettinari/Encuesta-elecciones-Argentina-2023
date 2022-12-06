@@ -14,90 +14,157 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="general">
+    <div class="container p-3 mb-2 bg-primary text-white">
       <h1 id="title">Encuesta elecciones Argentina 2023</h1>
       <p id="description">
         Formulario para medir la intencion de vostos de candidatos
       </p>
       <div>
-        <div class="encuesta">
+        <div class="container-fluid row">
           <form id="survey-form">
-            <label id="name-label" for="name">Nombre</label>
-            <input
-              title="This field should not be left blank"
-              id="name"
-              type="text"
-              placeholder="Ingresar nombre"
-              required
-            />
-            <label id="email-label" for="email">Email</label>
-            <input
-              title="This field should not be left blank"
-              type="email"
-              name="email"
-              pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$"
-              placeholder="Ingresar email"
-            />
-            <label id="number-label" for="number">Edad</label>
-            <input
-              title="This field should not be left blank"
-              id="number"
-              type="number"
-              placeholder="Ingresar edad"
-              min="16"
-              max="150"
-              required
-            />
+            <div class="mb-3">
+              <label
+                for="exampleFormControlInput1"
+                class="name-label"
+                id="name-label"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="ingresar Nombre"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="exampleFormControlInput1"
+                class="form-label"
+                id="email-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                placeholder="ingresar Email"
+                pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="exampleFormControlInput1"
+                class="form-label"
+                id="number-label"
+                >Edad</label
+              >
+              <input
+                type="number"
+                name="Edad"
+                class="form-control"
+                id="number"
+                placeholder="ingresar edad"
+                min="16"
+                max="150"
+                required
+              />
+            </div>
 
             <label id="encuesta" for="encuesta"
               >¿A que candidato votaria en una primera vuelta?</label
             >
-            <select type="select" id="encuesta" name="encuesta" required>
+
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              type="select"
+              id="dropdown"
+              name="encuesta"
+              required
+            >
               <option value="Cristina Fernandez">Cristina Fernandez</option>
               <option value="Mauricio Macri">Mauricio Macri</option>
               <option value="Javier Milei">Javier Milei</option>
             </select>
-            <label>¿Voto en la eleccion pasada?</label>
+            <br />
+            <div class="mb-3">
+              <label>¿Voto en la eleccion pasada?</label>
 
-            <input id="si" type="radio" name="Voto en la eleccion pasada" />SI
-            <input id="no" type="radio" name="Voto en la eleccion pasada" />NO
-            <label>¿Cuáles de las siguientes opciones te gustan?</label>
-            <input
-              type="checkbox"
-              name="likes"
-              value="Rajar empleados publicos"
-              id="likeRajar"
-            />
-            <label for="likeRajar">Rajar empleados publicos</label>
-            <input
-              type="checkbox"
-              name="likeAuh"
-              value="Asignacion universal por hijo"
-              id="likeAuh"
-            />
-            <label for="like-helado">Asignacion universal por hijo</label>
-            <input
-              type="checkbox"
-              name="likeKillEsi"
-              value="Abolir la ESI"
-              id="likeKillEsi"
-            />
-            <label for="like-frutas">Abolir la ESI</label>
-            <input
-              type="checkbox"
-              name="likes"
-              value="Nacionalizar la Banca privada"
-              id="likeNacionalizar"
-            />
-            <label for="likeNacionalizar">Nacionalizar la Banca privada</label>
-
+              <input
+                id="si"
+                type="radio"
+                name="Voto en la eleccion pasada"
+                value="SI"
+              />SI
+              <input
+                id="no"
+                type="radio"
+                name="Voto en la eleccion pasada"
+                value="NO"
+              />NO
+            </div>
+            <label> ¿Cuáles de las siguientes opciones te gustan?</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexCheckDefault"
+                value="Rajar empleados publicos"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Rajar empleados publicos
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexCheckDefault"
+                value="Asignacion universal por hijo"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Asignacion universal por hijo
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexCheckDefault"
+                value="Abolir la ESI"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Abolir la ESI
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Nacionalizar la Banca privada"
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Nacionalizar la Banca privada
+              </label>
+            </div>
+            <br />
             <label for="Comentarios">Comentarios:</label>
+
             <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
               name="Comentarios"
               id="Comentarios"
               placeholder="Agrega un comentario adicional"
             ></textarea>
-            <button id="submit">Enviar</button>
+            <button type="submit" class="btn btn-secondary" id="submit">
+              Enviar
+            </button>
           </form>
         </div>
       </div>
