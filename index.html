@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Encuesta Elecciones 2023</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,9 +15,9 @@
   </head>
   <body>
     <div class="container p-3 mb-2 bg-primary text-white">
-      <h1 id="title">Encuesta elecciones Argentina 2023</h1>
-      <p id="description">
-        Formulario para medir la intencion de vostos de candidatos
+      <h1 id="title" class="text-center">Encuesta elecciones Argentina 2023</h1>
+      <p id="description" class="text-center">
+        Formulario para medir la intención de votos de candidatos
       </p>
       <div>
         <div class="container-fluid row">
@@ -33,7 +33,7 @@
                 type="text"
                 class="form-control"
                 id="name"
-                placeholder="ingresar Nombre"
+                placeholder="Ingresar nombre"
                 required
               />
             </div>
@@ -49,7 +49,7 @@
                 name="email"
                 class="form-control"
                 id="email"
-                placeholder="ingresar Email"
+                placeholder="Ingresar email"
                 pattern="^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$"
                 required
               />
@@ -66,7 +66,7 @@
                 name="Edad"
                 class="form-control"
                 id="number"
-                placeholder="ingresar edad"
+                placeholder="Ingresar edad"
                 min="16"
                 max="150"
                 required
@@ -74,7 +74,7 @@
             </div>
 
             <label id="encuesta" for="encuesta"
-              >¿A que candidato votaria en una primera vuelta?</label
+              >¿A quien votaría en una primera vuelta?</label
             >
 
             <select
@@ -91,18 +91,18 @@
             </select>
             <br />
             <div class="mb-3">
-              <label>¿Voto en la eleccion pasada?</label>
+              <label>¿Votó en la elección pasada?</label>
 
               <input
                 id="si"
                 type="radio"
-                name="Voto en la eleccion pasada"
+                name="Voto en la elección pasada"
                 value="SI"
               />SI
               <input
                 id="no"
                 type="radio"
-                name="Voto en la eleccion pasada"
+                name="Voto en la elección pasada"
                 value="NO"
               />NO
             </div>
@@ -112,10 +112,10 @@
                 class="form-check-input"
                 type="checkbox"
                 id="flexCheckDefault"
-                value="Rajar empleados publicos"
+                value="Reducir el gasto publico del estado"
               />
               <label class="form-check-label" for="flexCheckDefault">
-                Rajar empleados publicos
+                Reducir el gasto publico del estado
               </label>
             </div>
             <div class="form-check">
@@ -123,10 +123,10 @@
                 class="form-check-input"
                 type="checkbox"
                 id="flexCheckDefault"
-                value="Asignacion universal por hijo"
+                value="Que el estado aumente la inversión en salud, educación y ciencia"
               />
               <label class="form-check-label" for="flexCheckDefault">
-                Asignacion universal por hijo
+                Que el estado aumente la inversión en salud, educación y ciencia
               </label>
             </div>
             <div class="form-check">
@@ -134,21 +134,21 @@
                 class="form-check-input"
                 type="checkbox"
                 id="flexCheckDefault"
-                value="Abolir la ESI"
+                value="Que el estado intervenga activamente en la economía"
               />
               <label class="form-check-label" for="flexCheckDefault">
-                Abolir la ESI
+                Que el estado intervenga activamente en la economía
               </label>
             </div>
             <div class="form-check">
               <input
                 class="form-check-input"
                 type="checkbox"
-                value="Nacionalizar la Banca privada"
+                value="Reducir la intervención estatal en la economía"
                 id="flexCheckDefault"
               />
               <label class="form-check-label" for="flexCheckDefault">
-                Nacionalizar la Banca privada
+                Reducir la intervención estatal en la economía
               </label>
             </div>
             <br />
@@ -162,9 +162,10 @@
               id="Comentarios"
               placeholder="Agrega un comentario adicional"
             ></textarea>
-            <button type="submit" class="btn btn-secondary" id="submit">
-              Enviar
-            </button>
+            <br />
+            <div class="d-grid gap-2">
+              <button class="btn btn-secondary" type="button">Enviar</button>
+            </div>
           </form>
         </div>
       </div>
